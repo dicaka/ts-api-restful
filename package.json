@@ -38,6 +38,7 @@
     "lint:fix": "npx eslint ./src --ext .ts --fix",
     "build": "tsc && cp .env ./build/.env",
     "prod": "node ./build/index.js",
+    "format": "npx prettier . --write",
     "prepare": "npx husky install",
     "check-types": "npx tsc --noEmit --pretty",
     "check-lint": "npx eslint . --ext ts --ext tsx --ext js",
